@@ -2,8 +2,8 @@ pipeline {
   agent any
   environment {
     DOCKERHUB_USER = "ebisu0402"
-    BUILD_HOST = "root@172.22.25.202"
-    PROD_HOST = "root@172.22.25.202"
+    BUILD_HOST = "root@172.22.25.204"
+    PROD_HOST = "root@172.22.25.204"
     BUILD_TIMESTAMP = sh(script: "date +%Y%m%d-%H%M%S", returnStdout: true).trim()
   }
   stages {
